@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Inputan Awal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Angka"
+        android:layout_gravity="center_horizontal" />
+    <requestFocus/>
+
+    <Spinner
+        android:paddingTop="8dp"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:entries="@array/Pilihan1"
+        android:layout_gravity="center_horizontal">
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"/>
+    <Spinner
+        android:paddingTop="8dp"
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:entries="@array/Pilihan2"
+        android:layout_gravity="center_horizontal">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/edtHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasil"
+        />
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proses"/>
+
+    <Button
+        android:id="@+id/btnBersih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bersih"/>
+
+</LinearLayout>

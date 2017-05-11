@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/tile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:alpha="0.3"
+        android:background="#9e9e9e"/>
+    <LinearLayout
+        android:layout_below="@+id/tile_picture"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txsuhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:text="Masukan Suhu" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suhu"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Konversi"
+            android:layout_marginBottom="14dp"
+            android:textSize="14sp"/>
+
+        <Spinner
+            android:id="@+id/spinsuhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/suhu">
+
+        </Spinner>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btnclear"
+        android:text="Clear"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btnhitung"
+        android:text="Count"/>
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txthasil"
+            android:text="TEST"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40sp"/>
+</LinearLayout>
+
+</RelativeLayout>
